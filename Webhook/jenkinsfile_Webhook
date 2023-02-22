@@ -14,5 +14,16 @@ pipeline {
                 sh 'python3  Webhook/main.py'
             }
         }
+        stage('post -build') {
+            steps {
+                echo "Pre-build"
+            }
+        }
+        stage('rebuild') {
+            steps {
+                
+                echo "build in progress"
+            }
+        }
     }
 }
